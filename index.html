@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Seprating odd and even</title>
+    <link rel="stylesheet" href="mystyle.css" />
+  </head>
+  <body>
+    <h1>Even and Odd Numbers</h1>
+    <p id="para1">Check whether even or odd by entering your values</p>
+
+    <div class="input">
+      <h2>Input Section</h2>
+      <form>
+        <p>Input:</p>
+        <textarea
+          id="textInput1"
+          onKeyPress=" return Validate(event)"
+        ></textarea
+        ><br /><br />
+        <button type="button" id="mybtn" onclick="seperateOddEven()">
+          Odd or Even
+        </button>
+      </form>
+    </div>
+
+    <div class="result">
+      <h2>Result Section</h2>
+      <h3>Even:</h3>
+      <p id="output"></p>
+      <br />
+      <h3 id="odd">Odd:</h3>
+      <p id="output2"></p>
+    </div>
+    <script src="evenodd.js"></script>
+  </body>
+</html>
